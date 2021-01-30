@@ -1,11 +1,11 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React from 'react'
+import { useSelector } from 'react-redux'
 
 //import styled from 'styled-components/macro';
 
 export const StatusMessage = () => {
-  const statusMessage = useSelector((store) => store.user.login.statusMessage);
-  const errorMessage = useSelector((store) => store.user.login.errorMessage);
+  const statusMessage = useSelector((store) => store.user.login.statusMessage)
+  const errorMessage = useSelector((store) => store.user.login.errorMessage)
 
   return (
     <>
@@ -20,5 +20,5 @@ export const StatusMessage = () => {
         </div>
       )}
     </>
-  );
-};
+  )
+}
